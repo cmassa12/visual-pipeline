@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Visual Pipeline — Photo ↔ Design Planning</title>
+    <meta
+      name="description"
+      content="Operating system for university photo and design: 90-day visual calendar, weekly sync, lead times, and DAM rules."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Syne:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="atmosphere" aria-hidden="true"></div>
+
+    <header class="topbar">
+      <a class="wordmark" href="#top">Visual Pipeline</a>
+      <nav class="nav" aria-label="Primary">
+        <a href="#model">Model</a>
+        <a href="#calendar">Calendar</a>
+        <a href="#sync">Sync</a>
+        <a href="#lead-times">Lead times</a>
+        <a href="#dam">DAM</a>
+        <a href="#handoff">Handoff</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <p class="eyebrow">Photo · Design · Creative ops</p>
+        <h1>Visual Pipeline</h1>
+        <p class="lede">
+          Shoot to the magazine and sprint work — with dean and faculty lead
+          time for hands-on content — instead of last-minute DAM browsing.
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#standup">Stand-up checklist</a>
+          <a class="btn ghost" href="./data/visual-calendar-template.csv" download
+            >Download calendar CSV</a
+          >
+        </div>
+      </section>
+
+      <section class="stats" aria-label="Lead time standards">
+        <div>
+          <strong>8–12 wks</strong>
+          <span>Magazine feature lead time</span>
+        </div>
+        <div>
+          <strong>3–6 wks</strong>
+          <span>Sprint / web piece lead time</span>
+        </div>
+        <div>
+          <strong>15–20 min</strong>
+          <span>Weekly creative sync</span>
+        </div>
+      </section>
+
+      <section id="model" class="section">
+        <div class="section-head">
+          <h2>Operating model</h2>
+          <p>
+            Planning lives on a shared calendar and weekly sync. The DAM stores
+            approved assets — it is not the briefing system.
+          </p>
+        </div>
+        <div class="split">
+          <div class="panel do">
+            <h3>Do this</h3>
+            <ul>
+              <li>Shared 90-day visual calendar (magazine + sprints)</li>
+              <li>Weekly sync: shipping, needs, gaps, outreach owners</li>
+              <li>Lead-time standards baked into planning</li>
+              <li>DAM as storage; optional Friday digest later</li>
+            </ul>
+          </div>
+          <div class="panel dont">
+            <h3>Stop doing this</h3>
+            <ul>
+              <li>Email after every assignment as the “system”</li>
+              <li>“Just check the DAM” with no brief</li>
+              <li>Same-week asks for planned magazine/sprint work</li>
+              <li>Buying Teams integration before briefing exists</li>
+            </ul>
+          </div>
+        </div>
+        <aside class="callout">
+          <strong>Core problem.</strong> Without a forward calendar, photo
+          can’t run manager → dean → faculty in time — so planned pages inherit
+          whatever was shot that week, or generic screens.
+        </aside>
+      </section>
+
+      <section id="calendar" class="section">
+        <div class="section-head">
+          <h2>90-day visual calendar</h2>
+          <p>
+            One sheet for alumni magazine and current/next sprints. If it isn’t
+            on the calendar, it isn’t planned.
+          </p>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Column</th>
+                <th>Purpose</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Need-by date</td>
+                <td>When design actually needs files</td>
+              </tr>
+              <tr>
+                <td>Piece</td>
+                <td>Magazine feature, sprint page, campaign</td>
+              </tr>
+              <tr>
+                <td>Story / angle</td>
+                <td>What the piece is saying</td>
+              </tr>
+              <tr>
+                <td>Ideal visual</td>
+                <td>Specific hands-on moment — not “campus life”</td>
+              </tr>
+              <tr>
+                <td>Access path</td>
+                <td>Manager → dean → faculty / program</td>
+              </tr>
+              <tr>
+                <td>Photo status</td>
+                <td>Not started / outreach / scheduled / shot / in DAM</td>
+              </tr>
+              <tr>
+                <td>Gallery / keywords</td>
+                <td>Where it will live for retrieval</td>
+              </tr>
+              <tr>
+                <td>Owners</td>
+                <td>Design owner + photo owner</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="note">
+          Sample rows ship in the CSV (culinary magazine, engineering sprint,
+          athletics event). Replace examples with live need-bys.
+        </p>
+      </section>
+
+      <section id="sync" class="section">
+        <div class="section-head">
+          <h2>Weekly creative sync</h2>
+          <p>
+            15–20 minutes. Chair: design director (photo facilitates until
+            hired). Source of truth: the visual calendar.
+          </p>
+        </div>
+        <ol class="agenda">
+          <li>
+            <span>01</span>
+            <div>
+              <strong>Shipping in 1–2 weeks</strong>
+              <p>Assets ready or gap? Outcome: gap list with owner.</p>
+            </div>
+          </li>
+          <li>
+            <span>02</span>
+            <div>
+              <strong>Next 30–90 days</strong>
+              <p>Magazine + current/next sprint. Outcome: updated rows.</p>
+            </div>
+          </li>
+          <li>
+            <span>03</span>
+            <div>
+              <strong>Outreach status</strong>
+              <p>Manager → dean → faculty. Outcome: blockers named.</p>
+            </div>
+          </li>
+          <li>
+            <span>04</span>
+            <div>
+              <strong>This week’s coverage</strong>
+              <p>What it serves — and what it doesn’t.</p>
+            </div>
+          </li>
+          <li>
+            <span>05</span>
+            <div>
+              <strong>Decisions</strong>
+              <p>Owners, dates, exceptions — written on the calendar.</p>
+            </div>
+          </li>
+        </ol>
+
+        <div class="copy-block">
+          <div class="copy-head">
+            <h3>Calendar invite</h3>
+            <button type="button" data-copy="invite">Copy</button>
+          </div>
+          <pre id="invite-text">Subject: Weekly creative sync — visual needs &amp; coverage
+
+15–20 min weekly check-in so photo can shoot to what’s coming (magazine + sprints), not only what happened to be covered that week.
+
+Bring: updates to the visual calendar (need-bys, angles, ideal visuals).
+
+Agenda: (1) shipping in 1–2 weeks (2) next 30–90 days (3) dean/faculty outreach (4) this week’s coverage vs needs (5) owners/dates.
+
+Calendar link: [add your sheet/Planner link]</pre>
+        </div>
+      </section>
+
+      <section id="lead-times" class="section">
+        <div class="section-head">
+          <h2>Lead times &amp; quality bar</h2>
+          <p>
+            Good campus photography needs outreach time. Same-week requests
+            force weak fallbacks.
+          </p>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Work type</th>
+                <th>Notice</th>
+                <th>Why</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Alumni magazine feature</td>
+                <td>8–12 weeks</td>
+                <td>Dean → faculty → real lab/kitchen/clinic moment</td>
+              </tr>
+              <tr>
+                <td>Web / campaign sprint</td>
+                <td>3–6 weeks</td>
+                <td>Schedule hands-on activity, not screens</td>
+              </tr>
+              <tr>
+                <td>Known campus event</td>
+                <td>Per event calendar</td>
+                <td>Still list coverage on the visual calendar</td>
+              </tr>
+              <tr>
+                <td>Breaking / reactive</td>
+                <td>Same week</td>
+                <td>Exception lane only — not the default</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="split tight">
+          <div class="panel do">
+            <h3>Prefer</h3>
+            <ul>
+              <li>Hands-on making, cooking, building, treating, practicing</li>
+              <li>Clear story beat — who is doing what, and why it matters</li>
+              <li>Specific programs and spaces named in the brief</li>
+            </ul>
+          </div>
+          <div class="panel dont">
+            <h3>Avoid as default</h3>
+            <ul>
+              <li>Students at laptops with no distinctive action</li>
+              <li>Vague “campus life” with no tie to the piece</li>
+              <li>Posing that could be anyone, anywhere</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="copy-block">
+          <div class="copy-head">
+            <h3>Sample dean outreach</h3>
+            <button type="button" data-copy="dean">Copy</button>
+          </div>
+          <pre id="dean-text">We’re planning visuals for [piece] (need-by [date]). We’re looking for a hands-on moment in [program] — e.g. [lab demo / kitchen service / clinic / build critique] — not computer lab. Could you connect us with a faculty member who has something real happening in the next [X] weeks that we could photograph?</pre>
+        </div>
+      </section>
+
+      <section id="dam" class="section">
+        <div class="section-head">
+          <h2>DAM &amp; request policy</h2>
+          <p>
+            PhotoShelter stores approved assets. Discovery for planned work
+            starts on the calendar, not in random gallery browsing.
+          </p>
+        </div>
+        <div class="split">
+          <div class="panel">
+            <h3>Notifications</h3>
+            <ul>
+              <li>No routine email after every assignment</li>
+              <li>Optional Friday digest with gallery links is fine</li>
+              <li>Park paid Teams alerts until briefing cadence works</li>
+              <li>Skip a staging gallery while event galleries already exist</li>
+            </ul>
+          </div>
+          <div class="panel">
+            <h3>Student organizations</h3>
+            <ul>
+              <li>Never share full albums or DAM access</li>
+              <li>Curated set only after edit/approval</li>
+              <li>Only if the group is clearly identifiable</li>
+              <li>Include credit and usage notes</li>
+            </ul>
+          </div>
+        </div>
+        <div class="copy-block">
+          <div class="copy-head">
+            <h3>Student org reply</h3>
+            <button type="button" data-copy="student">Copy</button>
+          </div>
+          <pre id="student-text">Thanks for reaching out. We don’t share full albums or DAM access, and Frost &amp; Lights was covered as a general campus event — so we may not have dedicated shots of your group.
+
+Once editing is done, I can check whether any approved images clearly feature your group. If we have a couple that work, I’m happy to send those for your pages with credit/usage notes. If not, we’ll let you know.
+
+If you share where you plan to post them and roughly how many you need, that helps.</pre>
+        </div>
+      </section>
+
+      <section id="handoff" class="section">
+        <div class="section-head">
+          <h2>Director day-one handoff</h2>
+          <p>
+            Ten-minute walkthrough for the incoming design director. Hand them
+            the model — then fill live themes together.
+          </p>
+        </div>
+        <blockquote class="talking">
+          We want imagery that matches what’s actually shipping — magazine and
+          sprints — not whatever happened to be shot that week. Good hands-on
+          photos need weeks of dean/faculty coordination. A shared 90-day
+          visual calendar plus a short weekly sync replaces “need this
+          yesterday” and random DAM browsing.
+        </blockquote>
+        <div class="panel">
+          <h3>First 30 days — ask of the director</h3>
+          <ol class="plain">
+            <li>Own calendar visibility — need-bys and angles stay current</li>
+            <li>Chair the weekly sync (or name a design lead)</li>
+            <li>Share magazine + sprint pipeline as soon as known</li>
+            <li>Partner on the hands-on quality bar</li>
+            <li>Revisit paid Teams alerts only after briefing works</li>
+          </ol>
+        </div>
+      </section>
+
+      <section id="standup" class="section">
+        <div class="section-head">
+          <h2>Stand-up checklist</h2>
+          <p>
+            Do these before or as the director arrives. Progress saves in this
+            browser.
+          </p>
+        </div>
+        <ul class="checklist" id="checklist">
+          <li>
+            <label
+              ><input type="checkbox" data-key="import" /> Import calendar CSV
+              to Sheets/Planner and share with design</label
+            >
+          </li>
+          <li>
+            <label
+              ><input type="checkbox" data-key="examples" /> Replace EXAMPLE
+              rows with known magazine themes and sprint need-bys</label
+            >
+          </li>
+          <li>
+            <label
+              ><input type="checkbox" data-key="sync" /> Pick weekly sync
+              day/time and send the invite</label
+            >
+          </li>
+          <li>
+            <label
+              ><input type="checkbox" data-key="owners" /> Note who owns magazine
+              lineup and sprint priorities today</label
+            >
+          </li>
+          <li>
+            <label
+              ><input type="checkbox" data-key="policy" /> Keep DAM + student
+              request replies handy</label
+            >
+          </li>
+          <li>
+            <label
+              ><input type="checkbox" data-key="walkthrough" /> Book director
+              day-one 10-minute walkthrough</label
+            >
+          </li>
+        </ul>
+      </section>
+
+      <section class="section success">
+        <div class="section-head">
+          <h2>Success — first semester</h2>
+        </div>
+        <ul class="ticks">
+          <li>Magazine features: outreach started ≥8 weeks out</li>
+          <li>Sprint pieces: visual needs listed ≥3 weeks out</li>
+          <li>Fewer same-week emergencies for planned work</li>
+          <li>Needs named on the calendar instead of “any new photos?”</li>
+          <li>Less generic computer-lab filler on story pages</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Visual Pipeline — internal photo ↔ design planning handbook</p>
+      <p class="muted">Sample templates included · customize for your campus</p>
+    </footer>
+
+    <div class="toast" id="toast" role="status" aria-live="polite" hidden>
+      Copied
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
